@@ -1,0 +1,19 @@
+@import url("main.css");
+
+body > .content {
+  flex-direction: column;
+}
+
+.title-container {
+  justify-content: center;
+  padding-right: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.contacts {
+  padding-left: 0;
+  margin-top: var(--spacing-size-large);
+}

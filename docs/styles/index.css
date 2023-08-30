@@ -1,0 +1,93 @@
+@import url("main.css");
+
+body > .content {
+  display: flex;
+  align-items: center;
+}
+
+.photo-container {
+  box-sizing: border-box;
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.photo {
+  box-sizing: border-box;
+  height: 16rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--font-color);
+}
+
+.info {
+  box-sizing: border-box;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 1rem;
+}
+
+.info > *:first-child {
+  margin-top: 0;
+}
+
+.info > * {
+  margin-top: var(--spacing-size-large);
+}
+
+.occupation {
+  max-width: 27rem;
+  line-height: 150%;
+  height: calc(var(--font-size-heading) * 3);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links > *:first-child {
+  margin-left: 0;
+}
+
+.links > * {
+  margin-left: var(--spacing-size-large);
+}
+
+.icon-container {
+  display: inline-block;
+  height: var(--font-size-heading);
+}
+
+.icon {
+  height: var(--font-size-heading);
+}
+
+.emails {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.email-container {
+  display: inline-block;
+  height: calc(var(--font-size-heading) / 2);
+}
+
+.email {
+  font-size: calc(var(--font-size-heading) / 2);
+}
+
+.resume-container {
+  display: inline-block;
+  height: var(--font-size-heading);
+}
+
+.resume {
+  font-size: var(--font-size-heading);
+}

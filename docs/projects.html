@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects</title>
+  <meta name="author" content="Rick Liu">
+  <meta name="description" content="Rick Liu's Website: Projects">
+
+  <link href="styles/projects.css" rel="stylesheet" type="text/css">
+  <link href="styles/mobile/projects.css" rel="stylesheet" type="text/css" media="(max-width: 800px)">
+</head>
+<body>
+  <div class="background"></div>
+
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="projects.html">Projects</a></li>
+    <li><a href="about-me.html">About Me</a></li>
+    <li><a href="contact-me.html">Contact Me</a></li>
+  </ul>
+
+  <div class="content">
+    <div class="title">Projects</div>
+    <div class="hr"><hr></div>
+
+    <div class="project left">
+      <div class="info">
+        <div class="title project-title">AI Art Detector</div>
+        <div class="project-key">Angular, Django, Keras</div>
+
+        <div class="project-text">
+          AI Art Detector is a single-page web app that lets users upload images and determines if they are AI-generated using a CNN binary image classifier.
+        </div>
+        <div class="project-text">
+          The frontend uses Angular and the backend uses Django, Keras and SQLite. The model was trained on ~20k images from a combination of datasets.
+        </div>
+        <div class="project-text">
+          The model performs reasonably well with both precision and recall in the mid 80s.
+          The training suffers from overfitting, most likely caused by the small dataset and a lack of tuning.
+          Nevertheless, the project demonstrates that detecting AI-generated artwork using AI is viable.
+        </div>
+        
+        <div class="icons">
+          <a class="icon-container" href="https://github.com/ricksliu/ai-art-detector" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="assets/github.svg" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <div class="asset-container">
+        <img class="image" src="assets/ai-art-detector.png" alt="Image of the frontend.">
+      </div>
+    </div>
+
+    <div class="hr"><hr></div>
+
+    <div class="project right">
+      <div class="info">
+        <div class="title project-title">UWLinker</div>
+        <div class="project-key">HTML, CSS, JS</div>
+
+        <div class="project-text">
+         UWLinker is a Chrome extension that adds tooltips linking various University of Waterloo sites and third-party sites together.
+        </div>
+        <div class="project-text">
+          So far, only course codes have tooltips, but I plan to add more types in the future.
+        </div>
+        
+        <div class="icons">
+          <a class="icon-container" href="https://github.com/ricksliu/uw-linker" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="assets/github.svg" alt="GitHub">
+          </a>
+          <a class="icon-container" href="https://chrome.google.com/webstore/detail/uwlinker/dibenafgkoecnpohehnignbpnoccdenp" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="assets/external-link.svg" alt="Chrome Web Store">
+          </a>
+        </div>
+      </div>
+
+      <div class="asset-container">
+        <img class="image" src="assets/uw-linker.png" alt="Image of a course tooltip.">
+      </div>
+    </div>
+
+    <div class="hr"><hr></div>
+
+    <div class="project left">
+      <div class="info">
+        <div class="title project-title">AnimeList Duel</div>
+        <div class="project-key">React, Spring Boot, MongoDB</div>
+
+        <div class="project-text">
+          AnimeList Duel is a website that compares MyAnimeList users.
+        </div>
+        <div class="project-text">
+          The frontend uses React, TypeScript, SASS and Material UI, and the backend uses Spring Boot and MongoDB.
+        </div>
+        <div class="project-text">
+          The backend scrapes MyAnimeList pages and extracts the data for users using regular expressions.
+          The results are stored using MongoDB for a period of time so the same data is not scraped repeatedly.
+        </div>
+        
+        <div class="icons">
+          <a class="icon-container" href="https://github.com/ricksliu/animelist-duel" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="assets/github.svg" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <div class="asset-container">
+        <img class="image" src="assets/animelist-duel.png" alt="Image of the frontend.">
+      </div>
+    </div>
+
+    <div class="hr"><hr></div>
+
+    <div class="project right">
+      <div class="info">
+        <div class="title project-title">CamWow!</div>
+        <div class="project-key">Python, OpenCV, Selenium, Raspberry Pi</div>
+
+        <div class="project-text">
+          What if you could set up automated tasks for your computer based on hand gestures?
+          'CamWow!' was a first-year school project made by a team of five using Python.
+        </div>
+        <div class="project-text">
+          A Raspberry Pi recognizes hand gestures, including various shapes and the number of fingers, and sends this data to a computer.
+          Based on what the computer gets, certain user-specified tasks are automatically run, such as opening computer files or opening links with optional login info.
+        </div>
+        <div class="project-text">
+          I was responsible for establishing communications between the Pi and the computer, implementing the ability to customize and save tasks, and creating a GUI.
+        </div>
+        <div class="project-text">
+          Unfortunately, the source code can never see the light of day, but check out the semi-serious video showcasing the project.
+        </div>
+      </div>
+      
+      <div class="asset-container">
+        <iframe class="video" src="https://www.youtube.com/embed/gXgEIrk1aiw" title="SE101 Final Demo Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="hr"><hr></div>
+    <div class="title">Misc Projects</div>
+    <div class="hr"><hr></div>
+
+    <div class="project left">
+      <div class="info">
+        <div class="title project-title">ASCII Art Converter</div>
+        <div class="project-key">Python</div>
+
+        <div class="project-text">
+          Converts videos into ASCII art.
+          Uses Python with OpenCV, Pillow and MoviePy.
+        </div>
+
+        <div class="icons">
+          <a class="icon-container" href="https://github.com/ricksliu/ascii-art-converter" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="assets/github.svg" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <div class="asset-container">
+        <iframe class="video" src="https://www.youtube.com/embed/56U7oWeNYMI" title="ASCII Art Converter - Video Showcase" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="hr"><hr></div>
+    
+    <div class="project right">
+      <div class="info">
+        <div class="title project-title">SoluteTaire</div>
+        <div class="project-key">Java, libGDX</div>
+
+        <div class="project-text">
+          Chemistry-themed Solitaire clone.
+          Uses Java with libGDX.
+        </div>
+
+        <div class="icons">
+          <a class="icon-container" href="https://github.com/ricksliu/solutetaire" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="assets/github.svg" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <div class="asset-container">
+        <iframe class="video" src="https://www.youtube.com/embed/57rxYg5MKyw" title="SoluteTaire (v1.0) - Video Showcase" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

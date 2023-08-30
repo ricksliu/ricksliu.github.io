@@ -1,0 +1,53 @@
+@import url("main.css");
+
+.project.left {
+  flex-direction: column;
+}
+
+.project.right {
+  flex-direction: column;
+}
+
+.left .info {
+  align-items: start;
+  padding-right: 0;
+}
+
+.right .info {
+  align-items: start;
+  padding-left: 0;
+}
+
+.left .info * {
+  text-align: start;
+}
+
+.right .info * {
+  text-align: start;
+}
+
+.left .project-text {
+  text-align: left;
+}
+
+.right .project-text {
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.asset-container {
+  margin-top: var(--spacing-size-large);
+}
+
+.left > .asset-container {
+  padding-left: 0;
+}
+
+.right > .asset-container {
+  padding-right: 0;
+}

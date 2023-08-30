@@ -1,0 +1,22 @@
+@import url("main.css");
+
+body > .content {
+  flex-direction: column;
+}
+
+.photo-container {
+  justify-content: center;
+  padding-right: 0;
+}
+
+.info {
+  align-items: center;
+  padding-left: 0;
+  margin-top: var(--spacing-size-large);
+}
+
+.occupation {
+  text-align: center;
+  line-height: 100%;
+  height: calc(var(--font-size-heading) * 2);
+}

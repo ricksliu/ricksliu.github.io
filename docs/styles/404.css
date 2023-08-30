@@ -1,0 +1,11 @@
+@import url("main.css");
+
+body > .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-top: var(--spacing-size-large);
+}

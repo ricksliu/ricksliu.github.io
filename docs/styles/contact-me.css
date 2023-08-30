@@ -1,0 +1,52 @@
+@import url("main.css");
+
+body > .content {
+  display: flex;
+  align-items: start;
+}
+
+.title-container {
+  box-sizing: border-box;
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  padding-right: 1rem;
+}
+
+.title {
+  text-align: right;
+}
+
+.contacts {
+  box-sizing: border-box;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 1rem;
+}
+
+.contacts > *:first-child {
+  margin-top: 0;
+}
+
+.contacts > * {
+  margin-top: var(--spacing-size-large);
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  height: var(--font-size-heading);
+}
+
+.icon {
+  height: var(--font-size-heading);
+  margin-right: var(--spacing-size);
+}
+
+.contact {
+  display: inline-block;
+  font-size: var(--font-size-heading);
+}

@@ -1,0 +1,35 @@
+@import url("main.css");
+
+.title {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  align-items: stretch;
+}
+
+.about {
+  box-sizing: border-box;
+  flex: 0 0 65%;
+  padding-right: calc(var(--spacing-size-large) / 2);
+  line-height: 200%;
+}
+
+.photo-container {
+  box-sizing: border-box;
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: calc(var(--spacing-size-large) / 2);
+}
+
+.photo-container > .photo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photo-container > .caption {
+  margin-top: var(--spacing-size);
+}

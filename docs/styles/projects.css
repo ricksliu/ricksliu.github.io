@@ -1,0 +1,106 @@
+@import url("main.css");
+
+.title {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  align-items: stretch;
+}
+
+.project.left {
+  flex-direction: row;
+}
+
+.project.right {
+  flex-direction: row-reverse;
+}
+
+.info {
+  box-sizing: border-box;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .info {
+  align-items: end;
+  padding-right: calc(var(--spacing-size-large) / 2);
+}
+
+.right .info {
+  align-items: start;
+  padding-left: calc(var(--spacing-size-large) / 2);
+}
+
+.left .info * {
+  text-align: end;
+}
+
+.right .info * {
+  text-align: start;
+}
+
+.project-key {
+  margin-top: var(--spacing-size);
+  font-weight: bold;
+}
+
+.project-text {
+  line-height: 150%;
+  margin-top: var(--spacing-size-large);
+}
+
+.left .project-text {
+  text-align: right;
+}
+
+.right .project-text {
+  text-align: left;
+}
+
+.icons {
+  margin-top: var(--spacing-size-large);
+}
+
+.icon-container {
+  height: var(--font-size-heading);
+  margin-left: var(--spacing-size-large);
+}
+
+.icon-container:first-child {
+  margin-left: 0;
+}
+
+.icon {
+  height: var(--font-size-heading);
+}
+
+.asset-container {
+  box-sizing: border-box;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left > .asset-container {
+  padding-left: calc(var(--spacing-size-large) / 2);
+}
+
+.right > .asset-container {
+  padding-right: calc(var(--spacing-size-large) / 2);
+}
+
+.asset-container > * {
+  box-sizing: border-box;
+  width: 100%;
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--font-color);
+}
+
+.asset-container > .video {
+  aspect-ratio: 16 / 9;
+}

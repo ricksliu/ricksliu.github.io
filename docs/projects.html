@@ -28,18 +28,19 @@
     <div class="project left">
       <div class="info">
         <div class="title project-title">AI Art Detector</div>
-        <div class="project-key">Angular, Django, Keras</div>
+        <div class="project-key">Angular, Django, PyTorch, Nginx, Docker, AWS</div>
 
         <div class="project-text">
-          AI Art Detector is a single-page web app that lets users upload images and determines if they are AI-generated using a CNN binary image classifier.
+          AI Art Detector is a web app that lets users upload images and determines if they are AI-generated using machine learning.
         </div>
         <div class="project-text">
-          The frontend uses Angular and the backend uses Django, Keras and SQLite. The model was trained on ~20k images from a combination of datasets.
+          The frontend single-page application is built using Angular.
+          The backend is built using Django and is powered by a CNN binary image classifier built using PyTorch.
+          The web app is deployed using Nginx, Docker and AWS (RDS, EC2, ECR, S3, CloudFront), though it's offline right now because AWS is expensive.
         </div>
         <div class="project-text">
-          The model performs reasonably well with both precision and recall in the mid 80s.
-          The training suffers from overfitting, most likely caused by the small dataset and a lack of tuning.
-          Nevertheless, the project demonstrates that detecting AI-generated artwork using AI is viable.
+          The model performed reasonably well on the test data with a precision of 0.88 and a recall of 0.94.
+          However, the model struggled to generalize during training and suffered from overfitting, most likely due to the lack of tuning and data.
         </div>
         
         <div class="icons">
@@ -130,9 +131,6 @@
         </div>
         <div class="project-text">
           I was responsible for establishing communications between the Pi and the computer, implementing the ability to customize and save tasks, and creating a GUI.
-        </div>
-        <div class="project-text">
-          Unfortunately, the source code can never see the light of day, but check out the semi-serious video showcasing the project.
         </div>
       </div>
       
